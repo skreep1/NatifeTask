@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4CE80A287437D60013DC4B /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CE809287437D60013DC4B /* Detail.swift */; };
 		4A88B1132870660F00CB124D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1122870660F00CB124D /* AppDelegate.swift */; };
 		4A88B1152870660F00CB124D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1142870660F00CB124D /* SceneDelegate.swift */; };
 		4A88B1172870660F00CB124D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1162870660F00CB124D /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		4A88B12A2870661000CB124D /* NatifeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1292870661000CB124D /* NatifeTaskTests.swift */; };
 		4A88B1342870661000CB124D /* NatifeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1332870661000CB124D /* NatifeTaskUITests.swift */; };
 		4A88B1362870661000CB124D /* NatifeTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1352870661000CB124D /* NatifeTaskUITestsLaunchTests.swift */; };
+		4A88B1462870665500CB124D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1452870665500CB124D /* Post.swift */; };
+		4A88B14B287066A900CB124D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B14A287066A900CB124D /* Network.swift */; };
+		4A88B14E287066DC00CB124D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B14D287066DC00CB124D /* PostCell.swift */; };
+		4A96EC3228735E0D00E74381 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A96EC3128735E0D00E74381 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A4CE809287437D60013DC4B /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		4A88B10F2870660F00CB124D /* NatifeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatifeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A88B1122870660F00CB124D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A88B1142870660F00CB124D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		4A88B12F2870661000CB124D /* NatifeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatifeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A88B1332870661000CB124D /* NatifeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatifeTaskUITests.swift; sourceTree = "<group>"; };
 		4A88B1352870661000CB124D /* NatifeTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatifeTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A88B1452870665500CB124D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4A88B14A287066A900CB124D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4A88B14D287066DC00CB124D /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		4A96EC3128735E0D00E74381 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,12 @@
 		4A88B1112870660F00CB124D /* NatifeTask */ = {
 			isa = PBXGroup;
 			children = (
+				4A88B14C287066C300CB124D /* Controller */,
+				4A88B1442870664500CB124D /* View */,
+				4A88B1432870663A00CB124D /* ViewModel */,
+				4A88B1422870662E00CB124D /* Model */,
 				4A88B1122870660F00CB124D /* AppDelegate.swift */,
 				4A88B1142870660F00CB124D /* SceneDelegate.swift */,
-				4A88B1162870660F00CB124D /* ViewController.swift */,
-				4A88B1182870660F00CB124D /* Main.storyboard */,
 				4A88B11B2870661000CB124D /* Assets.xcassets */,
 				4A88B11D2870661000CB124D /* LaunchScreen.storyboard */,
 				4A88B1202870661000CB124D /* Info.plist */,
@@ -125,6 +137,49 @@
 				4A88B1352870661000CB124D /* NatifeTaskUITestsLaunchTests.swift */,
 			);
 			path = NatifeTaskUITests;
+			sourceTree = "<group>";
+		};
+		4A88B1422870662E00CB124D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A88B1452870665500CB124D /* Post.swift */,
+				4A4CE809287437D60013DC4B /* Detail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A88B1432870663A00CB124D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A88B14A287066A900CB124D /* Network.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A88B1442870664500CB124D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A88B1182870660F00CB124D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A88B14C287066C300CB124D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A88B14F28706AC500CB124D /* Cell */,
+				4A88B1162870660F00CB124D /* ViewController.swift */,
+				4A96EC3128735E0D00E74381 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A88B14F28706AC500CB124D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A88B14D287066DC00CB124D /* PostCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A88B14B287066A900CB124D /* Network.swift in Sources */,
 				4A88B1172870660F00CB124D /* ViewController.swift in Sources */,
+				4A4CE80A287437D60013DC4B /* Detail.swift in Sources */,
 				4A88B1132870660F00CB124D /* AppDelegate.swift in Sources */,
 				4A88B1152870660F00CB124D /* SceneDelegate.swift in Sources */,
+				4A88B1462870665500CB124D /* Post.swift in Sources */,
+				4A88B14E287066DC00CB124D /* PostCell.swift in Sources */,
+				4A96EC3228735E0D00E74381 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,13 +495,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatifeTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,6 +514,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ms.NatifeTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,13 +526,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NatifeTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,6 +545,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ms.NatifeTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
