@@ -7,13 +7,3 @@
 
 import Foundation
 
-struct DetailPost: Codable {
-    let detailPost: Detail
-}
-
-struct Detail: Codable {
-    let postID, timeshamp: Int
-    let title, text: String
-    let postImage: String
-    let likesCount: Int
-}

@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     private let urlSessionApi = Network()
     private var posts = [Post]()
+    private var fullPost: Detail?
+    private let segueId = "detailPost"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +51,7 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate  {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PostCell
         let posts = posts[indexPath.row]
         cell.setup(post: posts)
+        
         return cell
         
     }
@@ -70,5 +73,8 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate  {
     }
         
         }
+    
+    
+    
     }
     

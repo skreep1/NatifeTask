@@ -8,12 +8,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
 
+    }
 }

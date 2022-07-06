@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A4CE80A287437D60013DC4B /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CE809287437D60013DC4B /* Detail.swift */; };
+		4A4D1F212875F72C006477E2 /* FullPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D1F202875F72C006477E2 /* FullPost.swift */; };
 		4A88B1132870660F00CB124D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1122870660F00CB124D /* AppDelegate.swift */; };
 		4A88B1152870660F00CB124D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1142870660F00CB124D /* SceneDelegate.swift */; };
 		4A88B1172870660F00CB124D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A88B1162870660F00CB124D /* ViewController.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A4CE809287437D60013DC4B /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		4A4D1F202875F72C006477E2 /* FullPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPost.swift; sourceTree = "<group>"; };
 		4A88B10F2870660F00CB124D /* NatifeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatifeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A88B1122870660F00CB124D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A88B1142870660F00CB124D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4A88B1452870665500CB124D /* Post.swift */,
-				4A4CE809287437D60013DC4B /* Detail.swift */,
+				4A4D1F202875F72C006477E2 /* FullPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 			files = (
 				4A88B14B287066A900CB124D /* Network.swift in Sources */,
 				4A88B1172870660F00CB124D /* ViewController.swift in Sources */,
-				4A4CE80A287437D60013DC4B /* Detail.swift in Sources */,
+				4A4D1F212875F72C006477E2 /* FullPost.swift in Sources */,
 				4A88B1132870660F00CB124D /* AppDelegate.swift in Sources */,
 				4A88B1152870660F00CB124D /* SceneDelegate.swift in Sources */,
 				4A88B1462870665500CB124D /* Post.swift in Sources */,

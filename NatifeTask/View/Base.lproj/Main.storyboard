@@ -94,7 +94,7 @@
                                             <outlet property="likePost" destination="Xn6-6o-RAC" id="A6h-nY-gkf"/>
                                             <outlet property="previewPost" destination="pd5-8j-Txl" id="Gm0-71-0EQ"/>
                                             <outlet property="titlePost" destination="efM-eh-9rz" id="j8U-cM-8sP"/>
-                                            <segue destination="Qc6-bb-iYg" kind="show" id="gj1-g8-eAt"/>
+                                            <segue destination="Qc6-bb-iYg" kind="show" identifier="detailPost" id="gj1-g8-eAt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -155,26 +155,14 @@
                     <view key="view" contentMode="scaleToFill" id="tDi-mx-ChZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-fk-XgA">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TG4-PW-Ear"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="voO-Ew-S5p"/>
-                    <connections>
-                        <outlet property="label" destination="Wea-fk-XgA" id="Z5E-wC-hgW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oz-0E-Nvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="84"/>
+            <point key="canvasLocation" x="1776.8115942028987" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QjG-a0-1Yb">

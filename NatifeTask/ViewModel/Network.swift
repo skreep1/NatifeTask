@@ -8,9 +8,15 @@
 import Foundation
 
 class Network {
+    
+    private let baseUrl = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/"
+    private let fullPostsUrl = "https://raw.githubusercontent.com/anton-natife/jsons/master/api/posts/"
+    private let postsUrl = "main.json"
+    
     // MARK: Подключение к серверу
     func fetchPost(comp: @escaping ([Post]) -> ()) {
-        let api = URL(string: "https://raw.githubusercontent.com/anton-natife/jsons/master/api/main.json")
+        let url = baseUrl + postsUrl
+        let api = URL(string: url)
         
         URLSession.shared.dataTask(with: api!) { data, response, error in
             if error != nil {
@@ -22,8 +28,8 @@ class Network {
             let result =  try JSONDecoder().decode(PostArray.self, from: data!)
                 comp(result.posts)
             } catch {
-                
+                print("error")
             }
         } .resume()
     }
-    }
+}
