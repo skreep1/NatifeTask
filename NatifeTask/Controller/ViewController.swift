@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     private let urlSessionApi = Network()
     private var posts = [Post]()
-    //private var fullPost: Detail?
     private let segueId = "detailPost"
     
     override func viewDidLoad() {
@@ -62,8 +61,7 @@ extension ViewController: UICollectionViewDataSource,UICollectionViewDelegate  {
 
         if let cell = sender as? UICollectionViewCell,
         let indexPath = self.collectionView.indexPath(for: cell) {
-        let vc = segue.destination as! DetailViewController //Cast with your DestinationController
-                     //Now simply set the title property of vc
+        let vc = segue.destination as! DetailViewController
             vc.post = posts[indexPath.row]
                  
         }
