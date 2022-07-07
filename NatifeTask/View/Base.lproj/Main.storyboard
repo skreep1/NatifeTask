@@ -155,10 +155,71 @@
                     <view key="view" contentMode="scaleToFill" id="tDi-mx-ChZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-bs-M24">
+                                <rect key="frame" x="30" y="133" width="354" height="205"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-bI-fmW">
+                                <rect key="frame" x="30" y="381" width="364" height="49"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O67-KW-zeY">
+                                <rect key="frame" x="30" y="430" width="354" height="203"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLt-Od-oyk">
+                                <rect key="frame" x="348.5" y="686" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PJR-MW-Ns4">
+                                <rect key="frame" x="30" y="686" width="21" height="18"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGS-Yk-0ao">
+                                <rect key="frame" x="59" y="686" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TG4-PW-Ear"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="trailing" secondItem="O67-KW-zeY" secondAttribute="trailing" constant="30" id="3EB-eh-c08"/>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="trailing" secondItem="kNb-bs-M24" secondAttribute="trailing" constant="30" id="4FX-ph-owK"/>
+                            <constraint firstItem="O67-KW-zeY" firstAttribute="top" secondItem="8cc-bI-fmW" secondAttribute="bottom" id="4Pq-cn-fse"/>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="trailing" secondItem="8cc-bI-fmW" secondAttribute="trailing" constant="20" id="8rE-bz-PXt"/>
+                            <constraint firstItem="PJR-MW-Ns4" firstAttribute="top" secondItem="O67-KW-zeY" secondAttribute="bottom" constant="51.5" id="CWA-09-Ghj"/>
+                            <constraint firstItem="IGS-Yk-0ao" firstAttribute="top" secondItem="O67-KW-zeY" secondAttribute="bottom" constant="53" id="Cvb-lT-dMP"/>
+                            <constraint firstItem="8cc-bI-fmW" firstAttribute="top" secondItem="kNb-bs-M24" secondAttribute="bottom" constant="43" id="MHQ-Ot-TNQ"/>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="bottom" secondItem="kNb-bs-M24" secondAttribute="bottom" constant="524" id="UqY-6V-dgf"/>
+                            <constraint firstItem="8cc-bI-fmW" firstAttribute="leading" secondItem="TG4-PW-Ear" secondAttribute="leading" constant="30" id="Uza-TI-BZr"/>
+                            <constraint firstItem="PJR-MW-Ns4" firstAttribute="leading" secondItem="TG4-PW-Ear" secondAttribute="leading" constant="30" id="YRA-8d-aHT"/>
+                            <constraint firstItem="kNb-bs-M24" firstAttribute="top" secondItem="TG4-PW-Ear" secondAttribute="top" constant="45" id="cEK-RC-Bey"/>
+                            <constraint firstItem="IGS-Yk-0ao" firstAttribute="leading" secondItem="PJR-MW-Ns4" secondAttribute="trailing" constant="8" id="eJb-BK-uaS"/>
+                            <constraint firstItem="SLt-Od-oyk" firstAttribute="firstBaseline" secondItem="IGS-Yk-0ao" secondAttribute="firstBaseline" id="fJh-Y7-GtD"/>
+                            <constraint firstItem="SLt-Od-oyk" firstAttribute="top" secondItem="TG4-PW-Ear" secondAttribute="top" constant="598" id="n8Y-Rf-Uu5"/>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="trailing" secondItem="SLt-Od-oyk" secondAttribute="trailing" constant="30" id="qfK-Od-tPu"/>
+                            <constraint firstItem="O67-KW-zeY" firstAttribute="leading" secondItem="TG4-PW-Ear" secondAttribute="leading" constant="30" id="tbQ-KI-cwc"/>
+                            <constraint firstItem="kNb-bs-M24" firstAttribute="leading" secondItem="TG4-PW-Ear" secondAttribute="leading" constant="30" id="uIZ-5s-xM9"/>
+                            <constraint firstItem="TG4-PW-Ear" firstAttribute="bottom" secondItem="8cc-bI-fmW" secondAttribute="bottom" constant="432" id="uiD-bz-XiL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="voO-Ew-S5p"/>
+                    <connections>
+                        <outlet property="datePost" destination="SLt-Od-oyk" id="HUr-ki-d1t"/>
+                        <outlet property="likePost" destination="IGS-Yk-0ao" id="kkO-BZ-LYQ"/>
+                        <outlet property="previewPost" destination="O67-KW-zeY" id="WHE-Se-fbZ"/>
+                        <outlet property="titlePost" destination="8cc-bI-fmW" id="ZeQ-sQ-oWn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oz-0E-Nvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
