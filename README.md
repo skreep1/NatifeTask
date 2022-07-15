@@ -6,7 +6,7 @@ To develop the application, I used the following technologies:
 - Swift
 - UIKit and Autolayout
 - URLSession for connect to api
-- MVVM Architecture
+- MVC Architecture
 
 # Features
 I implemented the following features for the application:
